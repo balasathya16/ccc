@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Use the Roboto font */
+    margin-top: 60px;
+
+  }
+  
+  header {
+    background-color: #2979ff; /* Cool blue color */
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Add a higher z-index to keep the navigation bar on top */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 60px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: black;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h1, h2, p {
+    color: #fff;
+  }
+
+
+  .page-container {
+    height: 100%;
+  }
+
+/* Styles for Home Section */
+
+
+.fullscreen-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    max-width: 200px;
+    margin-top: 20px;
+  }
+  
+  .club-picture {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+
+
+  /* Styles for Slideshow */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Custom left and right arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+// about us section
+
+#about {
+  height: 100vh;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.about-content {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-paragraph {
+  margin-bottom: 20px;
+}
+
+// contact us form
+
+#contact {
+  height: 100vh;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #fff; /* Set the label text color to white */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  resize: vertical; /* Allow vertical resizing */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Add border radius */
+}
+
+textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #666; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(102, 102, 102, 0.5); /* Add a subtle box shadow on focus */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+  /* Media Query for Mobile Responsive */
+  @media (max-width: 600px) {
+    nav {
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin-right: 5px; /* Adjust the margin as needed */
+    }
+    .logo {
+      max-width: 150px;
+    }
+  
+    .club-picture {
+      max-width: 300px;
+    }
+
+    .about-section {
+      height: auto;
+    }
+  
+    .about-content {
+      width: 60%;
+    }
+
+
+    textarea {
+      width: 100%; /* Modify the width as needed */
+      max-width: 400px; /* Set a maximum width to limit expansion on larger screens */
+    }
+  }

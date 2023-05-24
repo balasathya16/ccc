@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="home" class="fullscreen-section">
+    <section>
+        <div class="welcome-section">
+            <h1>Welcome to Cambridge Cricket Club. We are located at 100 Wentworth Ave, Cambridge, ON</h1>
+            <img src="./logo img/logo.jpeg" alt="Club Logo" class="logo">
+            <img src="./gallery_images/1.jpg" alt="Club Picture" class="club-picture">
+          </div>
+    </div>
+    </section>
+
+
+   
+    <section id="gallery">
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./gallery_images/2.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/3.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/Premierfinals-146.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/Premierfinals-192.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/Premierfinals-275.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/Premierfinals-30.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/Premierfinals-30.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+          <img src="./gallery_images/team-pic.jpg" alt="Image 3">
+        </div>
+        
+        
+        <!-- Custom left and right arrows -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+
+      <section id="about">
+        <div class="about-section">
+          <div class="about-content">
+            <h2>About Us</h2>
+            <p class="about-paragraph">We are a prestigious cricket club that has been an active participant in various Cricket Leagues since 1852. Currently, we participate in the Hamilton and District Cricket League. With a rich history and a strong tradition of excellence, we strive to uphold the values of sportsmanship, teamwork, and camaraderie. Our dedicated players and passionate supporters make us a force to be reckoned with on the cricket field. The season for Cambridge Cricket Club runs from May to October, during which we engage in thrilling matches, fierce rivalries, and unforgettable moments. Join us as we continue to write our chapter in the storied legacy of cricket.</p>    
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact">
+        <div class="contact-section">
+          <div class="contact-content">
+            <h2>Contact Us</h2>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
