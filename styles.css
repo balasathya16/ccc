@@ -39,6 +39,11 @@ body {
     text-decoration: none;
     padding: 10px;
   }
+
+  nav ul li a:hover {
+    background-color: #ff4081; /* Contrasting color for hover effect */
+    border-radius: 10px; /* Rounded edges on hover */
+  }
   
   main {
     padding: 20px;
@@ -220,7 +225,7 @@ textarea {
   padding: 10px;
   resize: vertical; /* Allow vertical resizing */
   border: 1px solid #ccc; /* Add a border */
-  border-radius: 4px; /* Add border radius */
+  border-radius: 10px; /* Add border radius */
 }
 
 textarea:focus {
@@ -235,8 +240,12 @@ button[type="submit"] {
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 10px; /* Set the border radius for textboxes */
 }
-
+button:hover {
+  background-color: #ff4081; /* Contrasting color for hover effect */
+  border-radius: 10px; /* Rounded edges on hover */
+}
 
 
   /* Media Query for Mobile Responsive */
@@ -244,10 +253,25 @@ button[type="submit"] {
     nav {
       justify-content: center;
     }
-    
-    nav ul li {
-      margin-right: 5px; /* Adjust the margin as needed */
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
     }
+
+    nav ul li {
+      margin: 10px 0; /* Add vertical spacing between navigation items */
+    }
+    
+    /* nav ul li {
+      margin-right: 10px; 
+      justify-content: center;
+    } */
+
+
     .logo {
       max-width: 150px;
     }
