@@ -129,6 +129,7 @@ body {
 
 #about {
   height: 100vh;
+  color: #fff; /* Set the text color to white */
 }
 
 .about-section {
@@ -143,6 +144,31 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+#about a {
+  color: #fff; /* Set the link color to white */
+}
+
+.membership-table {
+  color: #fff; /* Set the text color to white */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.membership-table th,
+.membership-table td {
+  padding: 8px;
+  border: 2px solid #fff; /* Set the border color to white and thickness to 2px */
+}
+
+.membership-table th {
+  background-color: #000; /* Set the background color to black */
+}
+
+.membership-table th {
+  text-align: left;
+}
+
 
 .about-paragraph {
   margin-bottom: 20px;
